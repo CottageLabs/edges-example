@@ -1,0 +1,38 @@
+<html lang="en">
+<body>
+
+<link rel="stylesheet" href="/edges/vendor/bootstrap-3.3.1/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/edges/css/bs3.ResultsFieldsByRowRenderer.css"/>
+<link rel="stylesheet" href="/edges/css/bs3.RefiningANDTermSelectorRenderer.css"/>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="edge_container"></div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="/edges/vendor/jquery-1.11.1/jquery-1.11.1.min.js"></script>
+
+<script type="text/javascript" src="/edges/src/es.js"></script>
+<script type="text/javascript" src="/edges/src/edges.js"></script>
+
+<script type="text/javascript" src="/edges/src/components/search.js"></script>
+<script type="text/javascript" src="/edges/src/components/selectors.js"></script>
+
+<script type="text/javascript" src="/edges/src/templates/bs3.Facetview.js"></script>
+
+<script type="text/javascript" src="/edges/src/renderers/bs3.RefiningANDTermSelectorRenderer.js"></script>
+<script type="text/javascript" src="/edges/src/renderers/bs3.ResultsFieldsByRowRenderer.js"></script>
+
+<script type="text/javascript" src="/example3.js"></script>
+<script type="text/javascript">
+    example.init({
+        selector: "#edge_container",
+        index: "http://localhost:9200/"
+    });
+</script>
+</body>
+</html>

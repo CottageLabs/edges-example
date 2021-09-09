@@ -1,0 +1,99 @@
+<html>
+<body>
+
+<link rel="stylesheet" href="/edges/vendor/bootstrap-3.3.1/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/edges/css/html5.ImportantNumbersRenderer.css"/>
+<link rel="stylesheet" href="/edges/vendor/nvd3-1.8.1/nv.d3.css"/>
+<link rel="stylesheet" href="/edges/css/bs3.ResultsFieldsByRowRenderer.css"/>
+<link rel="stylesheet" href="/edges/css/google.edges.css"/>
+
+<style type="text/css">
+    h2 {
+        margin-top: 150px;
+    }
+
+    #journal_histogram {
+        margin-top: 150px;
+        clear: both;
+    }
+
+    #language_count {
+        float: left;
+    }
+
+    #country_count {
+        float: left;
+    }
+
+    .edges-html5-important-numbers-main {
+        color: #000000;
+        padding-top: 50px;
+    }
+
+    .edges-html5-important-numbers-container {
+        width: 100px;
+        height: 100px;
+        border: 1px dotted #cccccc;
+    }
+
+    #journal_histogram {
+        width: 100%;
+        height: 400px;
+    }
+
+    #workflow-overview {
+        width: 100%;
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    #age_of_applications {
+        margin-top: 100px;
+        width: 100%;
+        height: 400px;
+    }
+
+    #oldest-applications {
+        margin-top: 100px;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="report_container"></div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="/edges/vendor/jquery-1.11.1/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/edges/vendor/PapaParse-4.1.2/papaparse.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHSLLjD8UtfNlczVJluIxzTOPGFOLStyQ"></script>
+
+<script type="text/javascript" src="/edges/src/es.js"></script>
+<script type="text/javascript" src="/edges/src/edges.js"></script>
+<script type="text/javascript" src="/edges/src/edges.csv.js"></script>
+
+<script type="text/javascript" src="/edges/vendor/d3-v3/d3.min.js"></script>
+<script type="text/javascript" src="/edges/vendor/nvd3-1.8.1/nv.d3.js"></script>
+
+<script type="text/javascript" src="/edges/src/components/numbers.js"></script>
+<script type="text/javascript" src="/edges/src/components/charts.js"></script>
+<script type="text/javascript" src="/edges/src/components/search.js"></script>
+<script type="text/javascript" src="/edges/src/components/maps.js"></script>
+
+<script type="text/javascript" src="/edges/src/renderers/html5.ImportantNumbersRenderer.js"></script>
+<script type="text/javascript" src="/edges/src/renderers/nvd3.edges.js"></script>
+<script type="text/javascript" src="/edges/src/renderers/bs3.ResultsFieldsByRowRenderer.js"></script>
+<script type="text/javascript" src="/edges/src/renderers/google.edges.js"></script>
+
+<script type="text/javascript" src="/doajreport.js"></script>
+<script type="text/javascript">
+    doajreport.init({
+        selector: "#report_container",
+        index: "http://localhost:9200/"
+    });
+</script>
+</body>
+</html>

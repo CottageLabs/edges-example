@@ -1,0 +1,17 @@
+.example-container {
+    font-size: 1.5em;
+    border: 1px dotted #cccccc;
+    padding: 10px;
+}
+
+.example-label {
+    font-weight: bold;
+}
+
+.example-label:after {
+    content: ":";
+}
+
+.example-number {
+    font-style: italic;
+}
